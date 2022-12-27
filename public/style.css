@@ -1,0 +1,10 @@
+#formulario {
+    display: inline-block;
+    width: 1000px;
+    height: 250px;
+    background-color: rgb(78, 78, 76);   
+}
+
+body {
+    text-align: center;
+}
