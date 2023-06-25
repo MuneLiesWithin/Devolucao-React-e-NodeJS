@@ -1,10 +1,67 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: linear-gradient(180deg, 
+                                    rgba(0, 0, 0, 0.3) 0%, 
+                                    rgba(0, 0, 0, 0.8) 100%),
+                                    url(fundo.jpg);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 #formulario {
+    border: 2px solid rgb(25, 25, 25);
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 10px;
+    margin: 150px auto;
     display: inline-block;
-    width: 1000px;
-    height: 250px;
-    background-color: rgb(78, 78, 76);   
+    padding: 50px;
+    margin-left: 515px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+fieldset {
+    border: 2px solid rgb(25, 25, 25);
+    background-color: rgba(211, 211, 211, 0.8);
+    border-radius: 10px;
+}
+#left {
+    width: 400px;
+    height: 100px;
+    left: 30%;
+    margin: -130px 0 0 -210px;
+    padding: 25px 10px 10px 15px;
+    position: absolute;
+    top: 50%;
 }
 
-body {
-    text-align: center;
+#right {
+    width: 400px;
+    height: 400px;
+    right: 20%;
+    margin: -130px 0 0 -210px;
+    padding: 10px;
+    position: absolute;
+    overflow-y: auto;
+    top: 32%;
+}
+button { 
+    margin: 0px 10px 0px 0px;
+}
+button:hover{
+    background-color: rgb(27, 26, 26);
+    color: white;
+    transition: background-color 0.5s, color 0.5;
+}
+button:active{
+    color:rgb(143, 65, 65);
+}
+footer {
+    position: absolute;
+    bottom: 30px;
+    right: 575px;
+    color:rgb(226, 216, 216);
 }

@@ -68,7 +68,7 @@ class Devolver extends React.Component {
             
         return (
             <form onSubmit={this.handleSubmit}>
-                <fieldset>
+                <fieldset id="left">
                 Livro:<br />
                 <input value={this.state.livro} onChange={this.handleLivroChange} />
                 <br />
@@ -78,11 +78,11 @@ class Devolver extends React.Component {
                 </fieldset>
                 <br />
                 <br />
-                <fieldset>
+                <fieldset id="right">
                 <b>Janela de Eventos</b>
-                <ol>
+                <ul>
                 {eventWindow}
-                </ol>
+                </ul>
                 </fieldset>
             </form>
         );

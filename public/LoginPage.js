@@ -43,18 +43,15 @@ class LoginPage extends React.Component {
     render() {
       return (
         <div>
-          <img src="fundo.jpg" width="1000" height="200"/>
           {this.state.usuarioLogado ? 
-          <>
-          <h2><b>Olá, {this.state.nome}!</b></h2>
-          <h3>Insira o livro para registrar uma devolução no sistema.</h3>  
+          <>  
           <Devolver />
           </> 
             
           :
 
           <form id='formulario' onSubmit={this.handleSubmit}>   
-            <h2>Login para o sistema de devoluções da Biblioteca Alexandria</h2>
+            <h2>Sistema de Devoluções</h2>
             <label>
             Nome:<br />
             <input type="text" nome={this.state.nome} onChange={this.handleChangeNome} />
@@ -67,11 +64,10 @@ class LoginPage extends React.Component {
             </label>
             <br/>
             <br/>
-            <input type="submit" value="Login" />          
+            <button type="submit">Login</button>          
           </form>
           }
-          <br /><br />
-          <b>{this.state.footnote}</b>
+          <footer>{this.state.footnote}</footer>
         </div>
       );
     }
