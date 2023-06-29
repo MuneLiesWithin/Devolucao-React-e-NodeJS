@@ -38,7 +38,7 @@ class LoginPage extends React.Component {
         this.setState({usuarioLogado: true});
       }
       event.preventDefault();
-      }
+    }
     
     render() {
       return (

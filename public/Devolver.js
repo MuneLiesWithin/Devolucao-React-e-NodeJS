@@ -1,3 +1,10 @@
+function formatDate(data){
+    const dia = data.getDate()
+    const mes = data.getMonth() + 1
+    const ano = data.getFullYear()
+    return `${dia}/${mes}/${ano}`
+}
+
 class Devolver extends React.Component {
     constructor(props) {
         super(props);
@@ -5,7 +12,7 @@ class Devolver extends React.Component {
         this.state = { 
             id: 0, 
             livro: '', 
-            hora: new Date(), 
+            hora: new Date().getHours() + ':' + new Date().getMinutes(), 
             data: new Date(), 
             list: list 
         };
@@ -45,13 +52,13 @@ class Devolver extends React.Component {
         list.push({
             id: this.state.list.length + 1,
             livro: this.state.livro,
-            hora: this.state.hora.toLocaleTimeString(),
-            data: this.state.data.toLocaleDateString()
+            hora: this.state.hora,
+            data: formatDate(this.state.data)
         });
         }
         this.setState(state => ({
             livro: '',
-            hora: new Date(),
+            hora: new Date().getHours() + ':' + new Date().getMinutes(),
             data: new Date(),
             list: list
         }))
