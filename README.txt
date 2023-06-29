@@ -1,3 +1,2 @@
-npm install express
-node server
-localhost:3000
+npm start
+access localhost:3000 on your browser
