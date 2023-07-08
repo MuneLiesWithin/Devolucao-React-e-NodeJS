@@ -86,7 +86,7 @@ class Devolver extends React.Component {
                 <br />
                 <br />
                 <fieldset id="right">
-                <b>Janela de Eventos</b>
+                 <h3><b>Janela de Eventos</b></h3>
                 <ul>
                 {eventWindow}
                 </ul>

@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var url = require('url');
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -9,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/backend', function (req, res) {
    res.writeHead(200, {'Content-Type': 'application/json'});
-   const resp =  '"Aluno: Rômulo de Medeiros"';
+   const resp =  '"Rômulo de Medeiros"';
    res.end(resp);
 });
 

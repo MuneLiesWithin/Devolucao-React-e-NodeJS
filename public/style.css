@@ -1,4 +1,5 @@
 body, html {
+    font-family: Helvetica;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -50,6 +51,11 @@ fieldset {
 }
 button { 
     margin: 0px 10px 0px 0px;
+    cursor: pointer;
+    padding: 3.5px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
 }
 button:hover{
     background-color: rgb(27, 26, 26);
@@ -64,4 +70,10 @@ footer {
     bottom: 30px;
     right: 575px;
     color:rgb(226, 216, 216);
+}
+h3 {
+    margin-top: 2px;
+}
+label {
+    font-weight: bold;
 }
